@@ -1,202 +1,409 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;700;800&amp;display=swap" rel="stylesheet" media="all" onload="this.media='all'">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <!--  CSS core  -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
-    <link rel="stylesheet" href="./styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Prenatal testDNA – rezerwacja wizyty</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;700;800&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap 4.4 CSS -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+        crossorigin="anonymous">
+
+  <!-- Flatpickr CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+
+  <!-- Twój główny arkusz -->
+  <link rel="stylesheet" href="./styles.css">
 </head>
 <body class="homepage">
-    <nav class="topbar-nav">
-        <div class="topbar-nav__contact d-flex align-items-center justify-content-between">
-            <div class="font-weight-bold free-consult-phone">Bezpłatne konsultacje <span class="d-none d-md-inline-block">pod numerem</span></div>
-            <div>
-                <img src="./img/icons/phone-icon.png" alt="Telefon">
-                <a href="tel:535645355" class="text-blue font-weight-bold">535 645 355</a>
-            </div>
-            <button class="bg-pink pink-col d-flex align-items-center text-white border-0 font-weight-bold"> <img src="./img/icons/calendar-icon.png" class="mr-2">Umów badanie</button>
+
+  <!-- ▸▸ TOPBAR ---------------------------------------------------- -->
+  <nav class="topbar-nav">
+    <div class="topbar-nav__contact d-flex align-items-center justify-content-between">
+      <div class="font-weight-bold free-consult-phone">
+        Bezpłatne konsultacje <span class="d-none d-md-inline-block">pod numerem</span>
+      </div>
+      <div>
+        <img src="./img/icons/phone-icon.png" alt="Telefon">
+        <a href="tel:535645355" class="text-blue font-weight-bold">535 645 355</a>
+      </div>
+      <button class="bg-pink pink-col d-flex align-items-center text-white border-0 font-weight-bold">
+        <img src="./img/icons/calendar-icon.png" class="mr-2" alt="">Umów badanie
+      </button>
+    </div><!-- /.topbar-nav__contact -->
+
+    <div class="topbar-nav__menu my-4">
+      <div class="container custom-container mx-auto d-flex align-items-center justify-content-between">
+        <a href="#"><img src="./img/logo-felia.png" alt="Prenatal testDNA"></a>
+
+        <ul class="topbar-nav__menu-list d-none d-md-flex align-items-center">
+          <li><a href="#" class="active">Strona główna</a></li>
+          <li><a href="#">O badaniu</a></li>
+          <li><a href="#">Poradnik</a></li>
+          <li><a href="#">Cennik</a></li>
+          <li><a href="#">Gdzie zrobić test</a></li>
+          <li><a href="#">O nas</a></li>
+          <li><a href="#">FAQ</a></li>
+          <li><a href="#">Dla lekarzy</a></li>
+        </ul><!-- /.topbar-nav__menu-list -->
+      </div><!-- /.container -->
+    </div><!-- /.topbar-nav__menu -->
+  </nav><!-- /.topbar-nav -->
+
+  <!-- ▸▸ PROMO BAR ------------------------------------------------- -->
+  <div class="promo-bar text-center font-weight-bold">
+    <img src="./img/icons/hearts-icon.png" class="mr-3" alt="">
+    Sprawdź 100% bezpiecznie zdrowie Twojego maluszka.
+    <img src="./img/icons/two-arrows-right-icon.png" class="ml-3" alt="">
+    <a href="#" class="text-blue text-decoration-underline-pink">Umów badanie już dziś</a>
+    <button class="border-0 bg-transparent ml-4">
+      <img src="./img/icons/cross-icon.png" alt="Zamknij pasek">
+    </button>
+  </div><!-- /.promo-bar -->
+
+  <!-- ▸▸ HERO ------------------------------------------------------ -->
+  <header class="hero-section padding-homepage-section bg-section-color pb-0">
+    <div class="container custom-container">
+
+      <h1 class="font-weight-bold">
+        <span class="text-blue">Jedyny w Polsce</span> test<br>prenatalny o takim<br>zakresie!
+      </h1>
+
+      <div class="star-ratings d-flex align-items-center mt-4">
+        <img src="./img/stars.png" alt="Ocena">
+        <div class="font-weight-bold ml-2">Ocena 4,9 na Google</div>
+      </div><!-- /.star-ratings -->
+
+      <div class="btns-row d-flex flex-column flex-md-row mt-5">
+        <button class="btn--primary mr-md-3 mb-3 mb-md-0">
+          <img src="./img/icons/calendar-icon.png" width="22" height="22" class="mr-2 mr-md-3" alt="">
+          Umów badanie
+        </button>
+        <button class="btn--alt">
+          <img src="./img/icons/blue-gray-phone-icon.png" class="mr-2 mr-md-3" alt="">
+          Bezpłatna konsultacja
+        </button>
+      </div><!-- /.btns-row -->
+
+      <!-- ▸▸ FEATURES -->
+      <div class="features-row d-flex flex-wrap">
+        <div class="feature-col col-6 col-md-3 text-center">
+          <div class="feature-img-wrapper">
+            <img src="./img/icons/test-tube-icon.png" alt="">
+          </div>
+          <p class="font-weight-bold">
+            Ponad <span class="text-blue">300 000 wykonanych badań</span> NIPT
+          </p>
         </div>
-        <!-- .topbar-nav__contact -->
-         <div class="topbar-nav__menu my-4">
-            <div class="container custom-container mx-auto d-flex align-items-center justify-content-between">
-                <a href="#">
-                    <img src="./img/logo-felia.png" alt="">
-                </a>
-                <ul class="topbar-nav__menu-list d-none d-md-flex align-items-center">
-                    <li><a href="#" class="active">Strona główna</a></li>
-                    <li><a href="#">O badaniu</a></li>
-                    <li><a href="#">Poradnik</a></li>
-                    <li><a href="#">Cennik</a></li>
-                    <li><a href="#">Gdzie zrobić test</a></li>
-                    <li><a href="#">O nas</a></li>
-                    <li><a href="#">FAQ</a></li>
-                    <li><a href="#">Dla lekarzy</a></li>
-                </ul>
-                <!-- .topbar-nav__menu-list -->
+
+        <div class="feature-col col-6 col-md-3 text-center">
+          <div class="feature-img-wrapper">
+            <img src="./img/icons/cert-icon.png" alt="">
+          </div>
+          <p class="font-weight-bold">
+            Laboratorium posiada <span class="text-blue">certyfikat akredytacji</span>
+          </p>
+          <p style="font-size:16px;">ISO 15189:2024 nr 01302</p>
+        </div>
+
+        <div class="feature-col col-6 col-md-3 text-center">
+          <div class="feature-img-wrapper">
+            <img src="./img/icons/diploma-icon.png" alt="">
+          </div>
+          <p class="font-weight-bold">
+            Coroczne <span class="text-blue">zewnętrzne oceny jakości</span><br>GenQA
+          </p>
+        </div>
+
+        <div class="feature-col col-6 col-md-3 text-center">
+          <div class="feature-img-wrapper">
+            <img src="./img/icons/ceivd-icon.png" alt="">
+          </div>
+          <p class="font-weight-bold">
+            Pracujemy na sprzęcie i odczynnikach<br><span class="text-blue">z certyfikatem CE-IVD</span>
+          </p>
+        </div>
+      </div><!-- /.features-row -->
+
+      <!-- ▸▸ ABOUT + FORM -->
+      <div class="about-test-section row mt-md-5">
+
+        <!-- LEWA KOLUMNA: tekst -->
+        <div class="col-12 col-md-6">
+          <h2><span class="text-blue">O badaniu</span> Prenatal testDNA</h2>
+          <p class="font-weight-bold mt-5">
+            Prenatal testDNA to nieinwazyjny test prenatalny o wysokiej czułości.
+            Do badania wystarczy mała próbka krwi Mamy – tak jak przy standardowej morfologii.
+            To w niej znajduje się wolne DNA płodu, które jest badane w kierunku
+            nieprawidłowości genetycznych, aby uzyskać ważne informacje
+            na temat zdrowia dziecka.
+          </p>
+          <p>
+            Prawidłowy wynik Prenatal testDNA może pomóc Ci odzyskać spokój o zdrowie
+            maluszka oraz uniknąć amniopunkcji.
+          </p>
+          <a href="#" class="text-blue text-decoration-underline-pink font-weight-bold">
+            <img src="./img/icons/two-arrows-right-icon.png" alt="">
+            Dowiedz się więcej, jak może Ci pomóc test prenatalny
+          </a>
+        </div>
+
+        <!-- PRAWA KOLUMNA: formularz -->
+        <div class="col-12 col-md-6">
+          <form class="form-reserve mx-auto ml-md-auto" autocomplete="off">
+
+            <!-- Nagłówek -->
+            <div class="row">
+              <h2 class="font-weight-normal">Zarezerwuj wizytę</h2>
             </div>
-            <!-- .container -->
+
+            <!-- 1. Poradnia / Wizyta -->
+            <div class="row flex-column mt-4">
+              <label>1. Wybierz poradnię lub wizytę domową</label>
+              <div class="options flex-column flex-md-row">
+                <label class="option flex-fill col-12 col-md-6">
+                  <input type="radio" name="visitType" checked>
+                  <span>Poradnia</span>
+                </label>
+                <label class="option flex-fill col-12 col-md-6">
+                  <input type="radio" name="visitType">
+                  <span>Wizyta domowa</span>
+                </label>
+              </div>
+            </div>
+
+            <!-- 2. Kod pocztowy -->
+            <div class="row flex-column mt-4">
+              <label>2. Podaj kod pocztowy</label>
+              <div class="option d-flex align-items-center">
+                <img src="./img/icons/mail-icon.png" alt="">
+                <input type="text" class="input"
+                       placeholder="__-___" maxlength="6"
+                       pattern="[0-9]{2}-[0-9]{3}">
+              </div>
+            </div>
+
+            <!-- 3. Data + Godzina -->
+            <div class="row flex-column mt-4">
+              <label>3. Wybierz termin i godzinę</label>
+
+              <div class="datetime d-flex flex-column flex-md-row" style="row-gap:10px;">
+
+                <!-- Data -->
+                <label class="input-label mb-2 mb-md-0 mr-md-2 flex-fill">
+                  <div class="option d-flex align-items-center">
+                    <img src="./img/icons/calendar-form-icon.png" alt="">
+                    <input id="visit-date"
+                           class="input form-control"
+                           placeholder="Wybierz datę"
+                           type="text">
+                  </div>
+                </label>
+
+                <!-- Godzina -->
+                <label class="input-label flex-fill">
+                  <div class="option d-flex align-items-center">
+                    <img src="./img/icons/calendar-form-icon.png" alt="">
+                    <select name="timeRange" class="form-control" required>
+                      <option value="" disabled selected hidden>Wybierz godzinę</option>
+                      <option value="8:00 - 10:00">8:00 – 10:00</option>
+                      <option value="10:00 - 12:00">10:00 – 12:00</option>
+                      <option value="12:00 - 14:00">12:00 – 14:00</option>
+                      <option value="14:00 - 17:00">14:00 – 17:00</option>
+                      <option value="Dowolne godziny">Dowolne godziny</option>
+                    </select>
+                  </div>
+                </label>
+
+              </div><!-- /.datetime -->
+            </div>
+
+            <!-- Przycisk wysyłki -->
+            <div class="row mt-4">
+              <button class="btn--primary w-100">Dalej</button>
+            </div>
+
+          </form>
+        </div><!-- /.col-md-6 -->
+      </div><!-- /.about-test-section -->
+
+    </div><!-- /.container -->
+  </header><!-- /.hero-section -->
+  <section class="our-patients-section padding-homepage-section">
+    <div class="container custom-container">
+        <div class="row align-items-center mt-5 mt-md-0">
+            <h2 class="text-center text-md-left">Nasze mamy<br><span class="text-blue">są naprawdę wspaniałe!</span></h2><img src="./img/icons/hearts-in-eyes-icon.png" class="ml-4 mt-5" alt="">
+        </div>
+        <!-- .row -->
+        <div class="row justify-content-between">
+             <div class="relation-col">
+                <h3 class="relation-col__title text-center mb-4"><span class="text-blue">Zobacz relacje</span> mam</h3>
+                <div class="relation-card">
+                    <div class="relation-card__img-wrapper text-center mb-4">
+                        <img src="./img/julita-juchnowicz.png" class="w-100" alt="">
+                    </div>
+                    <!-- .relation-card__img-wrappr -->
+                    <p>Mimo młodego wieku zdecydowałam sie na wykonanie badań prenatalnych z krwi bo ryzyko nieprawidłowości jest zawsze, a nie tylko u kobiet powyżej 35 roku życia. Jestem ogromnie wdzięczna za wykonanie tych badań bo naprawdę kamień spadł mi z serca, czekamy na Ciebie M. 🥹🫶🏼</p>
+                    <div class="d-flex flex-column flex-md-row mt-md-4">
+                        <button class="btn--primary flex-fill mr-md-3">Wyświetl post</button>
+                        <button class="btn--alt flex-fill mt-3 mt-md-0">Wyświetl profil</button>
+                    </div>
+                </div>
+                <!-- .relation-card -->
+            </div>
+            <!-- .relation-col -->
+            <div class="col d-flex flex-column justify-content-between">
+                <div class="moms-opinions-col flex-fill align-self-end">
+                    <h3 class="text-center mb-4"><span class="text-blue">Poznaj opinie</span> mam</h3>
+                    <div class="moms-opinions-card">
+                        <div class="moms-opinions-card__top d-flex mb-4 justify-content-between">
+                            <div class="d-flex">
+                                <div class="patient-img-wrapper mr-3">
+                                    <img src="./img/olga-opinie.png" class="w-100" alt="">
+                                </div>
+                                <div>
+                                    <h4 class="text-blue mb-0">Olga</h4>
+                                    <div><img src="./img/icons/reviews-5-stars-icons.png" alt=""></div>
+                                </div>
+                            </div>
+                            <!--  -->
+                            <div class="review-date">
+                                18 stycznia, 2025
+                            </div>
+                            <!-- .review-date -->
+                        </div>
+                        <!-- .moms-opinions-card__top -->
+                        <div class="moms-opinions-card__middle">
+                            <p>Krew pobrano mi w środę i w następną środę przed południem już miałam wyniki. Więc o wiele szybciej wyniki przyszły niż miało to być. Dzięki temu o wiele mniej dni byłam narażona na stres i niepewność. Dzięki testowi jestem już spokojna, że dzidzi w moim brzuchu jest zdrowe. POLECAM!!</p>
+                        </div>
+                        <!-- .moms-opinions-card__middle -->
+                        <div class="moms-opinions-card__bottom">
+                            <a href="" class="font-weight-bold text-decoration-underline-pink text-blue">Rozwiń</a>
+                        </div>
+                        <!-- .moms-opinions-card__bottom -->
+                    </div>
+                    <!-- .moms-opinions-card -->
+                </div>
+                <!-- .moms-opinions-col -->
+                <div class="thanks-for-trust-box align-self-center">
+                    <div class="thanks-for-trust-box__reviews d-flex">
+                        <div class="left text-center">
+                            <div style="font-weight: 900;">Świetnie</div>
+                            <img src="./img/trust-box-stars.png" class="d-block" alt="">
+                        </div>
+                        <div class="right">
+                            <div class="font-weight-bold" style="font-size: 12px">Wyniki z 414 opinii</div>
+                            <div class="img-google-wrapper">
+                                <img src="./img/trust-box-google.png" style="max-width: 121px;"alt="">
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <h2 class="align-self-center"><span class="text-blue">Dziękujemy</span><br>za zaufanie!</h2>
+                    <button class="btn--alt">Zobacz wszystkie opinie</button>
+                </div>
+            </div>
+            <!-- .col -->
+           
+        </div>
+        <!-- .row -->
+    </div>
+    <!-- .container  -->
+  </section>
+  <!-- .our-patients-section -->
+ <section class="why-choose-us-section padding-homepage-section"> 
+ <div class="container custom-container">
+    <h2 class="text-center"><span class="text-blue">Dlaczego warto</span><br>wybrać Feliatest?</h2>
+    <div class="row">
+        <div class="why-us-col col-6 col-md-3">
+            <img src="./img/icons/complex-test-icon.png" alt=""/>
+            <h3 class="text-blue">Kompleksowe badanie</h3>
+            <p>Całogenomowy test prenatalny – bada wszystkie 23 pary chromosomów.</p>
+        </div>
+        <!-- .why us col -->
+        <div class="why-us-col col-6 col-md-3">
+            <img src="./img/icons/safety-icon.png" alt=""/>
+            <h3 class="text-blue">Bezpiecznie i prosto</h3>
+            <p>Wystarczy pobrać małą próbkę krwi z ręki podobnie jak przy zwykłym badaniu krwi – bez ryzyka.</p>
+        </div>
+        <!-- .why us col -->
+        <div class="why-us-col col-6 col-md-3">
+            <img src="./img/icons/cert-big-icon.png" alt=""/>
+            <h3 class="text-blue">Skuteczny i wiarygodny</h3>
+            <p>Wysoka czułość ponad 99% dla trisomii, rzadkich aneuploidii i XY, delecji i duplikacji oraz 83,33% dla mikrodelecji.</p>
+        </div>
+        <!-- .why us col -->
+        <div class="why-us-col col-6 col-md-3">
+            <img src="./img/icons/fast-result-icon.png" alt=""/>
+            <h3 class="text-blue">Szybki wynik</h3>
+            <p>Wyniki online NIPT otrzymasz  już w 4-8 dni roboczych.</p>
+        </div>
+        <!-- .why us col -->
+        <div class="why-us-col col-6 col-md-3">
+            <img src="./img/icons/child-gender-icon.png" alt=""/>
+            <h3 class="text-blue">Poznaj płeć dziecka</h3>
+            <p>Możesz poznać płeć swojego maluszka na życzenie.</p>
+        </div>
+        <!-- .why us col -->
+        <div class="why-us-col col-6 col-md-3">
+            <img src="./img/icons/cutlery-icon.png" alt=""/>
+            <h3 class="text-blue">Nie musisz być na czczo</h3>
+            <p>Możesz wcześniej zjeść posiłek i pić.</p>
+        </div>
+        <!-- .why us col -->
+        <div class="why-us-col col-6 col-md-3">
+            <img src="./img/icons/proven-laboratory-icon.png" alt=""/>
+            <h3 class="text-blue">Sprawdzone laboratorium</h3>
+            <p>Akredytowane laboratorium, w którym wykonano już ponad 300 000 NIPT.</p>
+        </div>
+        <!-- .why us col -->
+        <div class="why-us-col col-6 col-md-3">
+            <img src="./img/icons/free-consult-icon.png" alt=""/>
+            <h3 class="text-blue">Bezpłatne konsultacje z lekarzem</h3>
+            <p>Wynik możesz skonsultować z lekarzem genetykiem klinicznym w cenie badania jeśli NIPT wykryje nieprawidłowości.</p>
+        </div>
+        <!-- .why us col -->
+         <div class="most-important-points row align-items-center mx-auto mt-4 mt-md-5">
+            <h4 class="mr-md-3 mb-4 mb-md-0">Są to tylko najważniejsze punkty.</h4>
+            <button class="btn--alt">Zobacz pełną listę</button>
          </div>
-         <!-- .topbar-nav__menu -->
-    </nav>
-    <!-- .topbar-nav -->
-     <div class="promo-bar text-center font-weight-bold">
-        <img src="./img/icons/hearts-icon.png" class="mr-3" alt="">
-        Sprawdź 100% bezpiecznie zdrowie Twojego maluszka.
-        <img src="./img/icons/two-arrows-right-icon.png" class="ml-3" alt="">
-        <a href="" class="text-blue text-decoration-underline-pink">Umów badanie już dziś</a>
-        <button class="border-0 bg-transparent ml-4"><img src="/img/icons/cross-icon.png" alt=""></button>
-     </div>
-     <!-- .promo-bar -->
-      <header class="hero-section padding-homepage-section bg-section-color">
-        <div class="container custom-container">
-            <h1 class="font-weight-bold">
-                <span class="text-blue">Jedyny w Polsce</span> test<br>prenatalny o takim<br>zakresie!
-            </h1>
-            <div class="star-ratings d-flex align-items-center mt-4">
-                <img src="./img/stars.png" alt="">
-                <div class="font-weight-bold ml-2">Ocena 4,9 na Google</div>
-            </div>
-            <!-- .star-ratings  -->
-            <div class="btns-row d-flex flex-column flex-md-row mt-5">
-                <button class="btn--primary mr-md-3 mb-3 mb-md-0">
-                    <img src="./img/icons/calendar-icon.png" width="22" height="22" class="mr-2 mr-md-3" alt="">
-                    Umów badanie
-                </button>
-                <button class="btn--alt">
-                    <img src="./img/icons/blue-gray-phone-icon.png" class="mr-2 mr-md-3" alt="">
-                    Bezpłatna konsultacja
-                </button>
-            </div>
-            <!-- .btns-row -->
-            <div class="features-row d-flex flex-wrap">
-                <div class="feature-col col-6 col-md-3">
-                    <div class="feature-img-wrapper">
-                        <img src="./img/icons/test-tube-icon.png" alt="">
-                    </div>
-                    <p class="text-center font-weight-bold">
-                        Ponad <span class="text-blue">300 000 wykonanych badań</span> NIPT
-                    </p>
-                </div>
-                <!-- .feature-col -->
-                <div class="feature-col col-6 col-md-3">
-                    <div class="feature-img-wrapper">
-                        <img src="./img/icons/cert-icon.png" alt="">
-                    </div>
-                    <p class="text-center font-weight-bold">
-                        Laboratorium posiada <span class="text-blue">certyfikat akredytacji</span>
-                    </p>
-                    <p class="text-center" style="font-size: 16px;">ISO 15189:2024 nr 01302</p>
-                </div>
-                <!-- .feature-col -->
-                <div class="feature-col col-6 col-md-3">
-                    <div class="feature-img-wrapper">
-                        <img src="./img/icons/diploma-icon.png" alt="">
-                    </div>
-                    <p class="text-center font-weight-bold">
-                        Coroczne <span class="text-blue">zewnętrzne oceny jakości prowadzone przez GenQA</span>
-                    </p>
-                </div>
-                <!-- .feature-col -->
-                <div class="feature-col col-6 col-md-3">
-                    <div class="feature-img-wrapper">
-                        <img src="./img/icons/ceivd-icon.png" alt="">
-                    </div>
-                    <p class="text-center font-weight-bold">
-                        Pracujemy na sprzęcie, oprogramowaniu i odczynnikach <span class="text-blue">z certyfikatem CE-IVD</span>
-                    </p>
-                </div>
-                <!-- .feature-col -->
-            </div>
-            <!-- .features-row -->
-            <div class="about-test-section mt-md-5">
-                <h2><span class="text-blue">O badaniu</span> Prenatal testDNA</h2>
-                <p class="font-weight-bold">Prenatal testDNA to nieinwazyjny test prenatalny o wysokiej czułości. Do badania wystarczy mała próbka krwi Mamy – tak jak przy standardowej morfologii. To w niej znajduje się wolne DNA płodu,  które jest badane w kierunku nieprawidłowości genetycznych,  aby uzyskać ważne informacje na temat zdrowia dziecka.</p>
-                <p>Prawidłowy wynik Prenatal testDNA może pomóc Ci odzyskać spokój o zdrowie maluszka oraz uniknąć amniopunkcji.</p>
-                <a href="#" class="text-blue text-decoration-underline-pink font-weight-bold"><img src="./img/icons/two-arrows-right-icon.png" alt=""/>  Dowiedz się więcej jak może Ci pomóc test prenatalny</a>
-          
-   <form class="form-reserve" autocomplete="off">
-    <h2>Zarezerwuj wizytę</h2>
-
-    <!-- 1. poradnia/wizyta domowa -->
-    <div class="form-reserve-row">
-      <label>1. Wybierz poradnię lub wizytę domową</label>
-      <div class="options">
-        <label class="option">
-          <input type="radio" name="visitType" checked>
-          <span>Poradnia</span>
-        </label>
-        <label class="option">
-          <input type="radio" name="visitType">
-          <span>Wizyta domowa</span>
-        </label>
-      </div>
     </div>
+    <!-- .row -->
+ </div>   
+ </section>
+ <!-- .why-choose-us-section -->
+  <section class="bg-map-section">
+    <div class="container custom-container">
+        <div class="bg-map-block d-flex align-items-center font-weight-bold">
+            <img src="./img/icons/check-icon.png" alt=""/>
+            <p>Wybierając Prenatal testDNA masz gwarancję, że Twoja próbka będzie przechowywana wyłącznie na terenie Unii Europejskiej.</p>
+        </div>
 
-    <!-- 2. kod pocztowy -->
-    <div class="section">
-      <label>2. Podaj kod pocztowy</label>
-      <input type="text" class="input" placeholder="__-___" maxlength="6" pattern="[0-9]{2}-[0-9]{3}">
+        <div class="bg-map-block d-flex align-items-center font-weight-bold">
+            <img src="./img/icons/check-icon.png" alt=""/>
+            <p>Skuteczność Prenatal DNA została potwierdzona na populacji europejskiej.</p>
+        </div>
+
     </div>
+  </section>
+  <!-- ▸▸ SKRYPTY ---------------------------------------------------- -->
+  <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+  <script>
+    /* Inicjalizacja Flatpickr dla pola daty */
+    flatpickr("#visit-date", {
+      altInput: true,
+      altFormat: "d.m.Y",
+      dateFormat: "Y-m-d",
+      disableMobile: true
+    });
+  </script>
 
-    <!-- 3. data + godzina -->
-    <div class="section">
-      <label>3. Wybierz termin i godzinę</label>
-
-      <div class="datetime">
-        <!-- data -->
-        <label class="input-label">
-          <span>Wybierz datę</span>
-          <input id="visit-date"
-            class="input"
-            placeholder="Wybierz datę"
-            type="text">
-        </label>
-
-        <!-- godzina -->
-        <label class="input-label">
-            <span>Wybierz godzinę</span>
-                <select name="timeRange" required>
-                    <!-- placeholder -->
-                    <option value="" disabled selected hidden>Wybierz godzinę</option>
-                    <!-- właściwe przedziały -->
-                    <option value="8:00 - 10:00">8:00 – 10:00</option>
-                    <option value="10:00 - 12:00">10:00 – 12:00</option>
-                    <option value="12:00 - 14:00">12:00 – 14:00</option>
-                    <option value="14:00 - 17:00">14:00 – 17:00</option>
-                    <option value="Dowolne godziny">Dowolne godziny</option>
-                </select>
-        </label>
-      </div>
-    </div>
-
-    <button class="btn--primary" type="submit">Dalej</button>
-  </form>
-  <!-- ========= SKRYPT placeholdera (znika po wyborze) ========= -->
- <!--  JS core  -->
-<script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
-<script>
-/* DATA */
-flatpickr("#visit-date", {
-  altInput: true,          // ładny format w polu
-  altFormat: "d.m.Y",
-  dateFormat: "Y-m-d",     // format wysyłany do backendu
-  disableMobile: true      // na mobile też własny picker
-});
-
-/* GODZINA */
-flatpickr("#visit-time", {
-  enableTime: true,
-  noCalendar: true,
-  time_24hr: true,
-  dateFormat: "H:i",
-  altInput: true,
-  altFormat: "H:i",
-  disableMobile: true
-});
-</script>
 </body>
 </html>
