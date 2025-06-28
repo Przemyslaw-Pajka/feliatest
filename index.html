@@ -69,19 +69,28 @@
   </div><!-- /.promo-bar -->
 
   <!-- ▸▸ HERO ------------------------------------------------------ -->
-  <header class="hero-section padding-homepage-section bg-section-color pb-0">
+  <header class="hero-section padding-homepage-section bg-section-color pb-0 ">
     <div class="container custom-container">
-
-      <h1 class="font-weight-bold">
-        <span class="text-blue">Jedyny w Polsce</span> test<br>prenatalny o takim<br>zakresie!
+      <div class="hero-section-bg d-flex d-md-block">
+        <div class="hero-section-bg__label d-flex align-items-center mx-auto">
+          <img src="./img/eu-flag-label.png" class="mr-3" alt="">
+          <div class="font-weight-bold" style="line-height: 1.3;">
+            <div class="text-blue" style="font-size: 12px;">Próbki i dane pozostają</div>
+            <div class="text-pink">WYŁĄCZNIE W EU</div>
+          </div>
+        </div>
+        <img src="./img/hero-baner-homepage.png" class="w-100" alt="">
+      </div>
+      <h1 class="homepage-title font-weight-bold text-center text-md-left mt-n5 mt-md-4 mt-md-0 ">
+        <span class="text-blue">Jedyny w Polsce</span> test prenatalny o takim zakresie!
       </h1>
 
-      <div class="star-ratings d-flex align-items-center mt-4">
+      <div class="star-ratings d-flex align-items-center mt-4 mx-auto justify-content-center justify-content-md-start">
         <img src="./img/stars.png" alt="Ocena">
         <div class="font-weight-bold ml-2">Ocena 4,9 na Google</div>
       </div><!-- /.star-ratings -->
 
-      <div class="btns-row d-flex flex-column flex-md-row mt-5">
+      <div class="btns-row d-flex flex-column flex-md-row mt-4 mt-md-5">
         <button class="btn--primary mr-md-3 mb-3 mb-md-0">
           <img src="./img/icons/calendar-icon.png" width="22" height="22" class="mr-2 mr-md-3" alt="">
           Umów badanie
@@ -93,6 +102,7 @@
       </div><!-- /.btns-row -->
 
       <!-- ▸▸ FEATURES -->
+      <h2 class="text-blue d-block d-md-none text-center mt-5 mb-4">Wyróżniamy się</h2>
       <div class="features-row d-flex flex-wrap">
         <div class="feature-col col-6 col-md-3 text-center">
           <div class="feature-img-wrapper">
@@ -137,8 +147,8 @@
 
         <!-- LEWA KOLUMNA: tekst -->
         <div class="col-12 col-md-6">
-          <h2><span class="text-blue">O badaniu</span> Prenatal testDNA</h2>
-          <p class="font-weight-bold mt-5">
+          <h2 class="mt-5 mt-md-0 text-center text-md-left"><span class="text-blue">O badaniu</span> Prenatal testDNA</h2>
+          <p class="font-weight-bold mt-4 mt-md-5">
             Prenatal testDNA to nieinwazyjny test prenatalny o wysokiej czułości.
             Do badania wystarczy mała próbka krwi Mamy – tak jak przy standardowej morfologii.
             To w niej znajduje się wolne DNA płodu, które jest badane w kierunku
@@ -157,10 +167,11 @@
 
         <!-- PRAWA KOLUMNA: formularz -->
         <div class="col-12 col-md-6">
+          <h2 class="text-center d-md-none my-4"><span class="text-blue">Zarezerwuj</span> wizytę</h2>
           <form class="form-reserve mx-auto ml-md-auto" autocomplete="off">
 
             <!-- Nagłówek -->
-            <div class="row">
+            <div class="row d-none d-md-block">
               <h2 class="font-weight-normal">Zarezerwuj wizytę</h2>
             </div>
 
