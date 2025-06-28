@@ -743,6 +743,22 @@ td.best, th.best-head, tfoot td.best-foot{
         max-width: 176px;
     }
 }
+@media screen and (max-width: 767px) {
+    .collection-points-and-home-img-label {
+        bottom: 16px;
+        right: 0px;
+        padding: 16px 40px;
+        font-size: 16px;
+    }
+    .how-test-works-banner-wrapper .collection-points-and-home-img {
+        max-height: 246px;
+        object-fit: cover;
+        border-top-left-radius: 16px;
+        border-top-right-radius: 80px;
+        border-bottom-left-radius: 80px;
+        border-bottom-right-radius: 16px;
+    }
+}
 /* how-example-test-looks */
 
 .example-test-form {
