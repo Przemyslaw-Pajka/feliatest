@@ -656,9 +656,13 @@ td.best, th.best-head, tfoot td.best-foot{
 }
 
 .how-test-work-number {
-    font-size: 88px;
+    font-size: 63px;
     color: var(--color-pink);
     font-weight: 700;
+}
+
+.how-test-work-text *{
+    font-size: 18px;
 }
 
 .how-test-works-steps-list__item {
@@ -697,7 +701,6 @@ td.best, th.best-head, tfoot td.best-foot{
     position: relative;
 }
 .how-test-works-banner-wrapper .collection-points-and-home-img {
-    max-width: 536px;
     max-height: 715px;
     border-top-left-radius: 18px;
     border-top-right-radius: 180px;
@@ -712,7 +715,9 @@ td.best, th.best-head, tfoot td.best-foot{
     position: relative;
     line-height: 1.2;
 }
-
+.how-test-works-text-wrapper {
+    max-width: 560px;
+}
 .collection-points-and-home-img-label {
     background: var(--color-light-pink);
     padding: 32px 40px;
@@ -744,9 +749,10 @@ td.best, th.best-head, tfoot td.best-foot{
     }
 }
 @media screen and (max-width: 767px) {
+   
     .collection-points-and-home-img-label {
         bottom: 16px;
-        right: 0px;
+        right: 15px;
         padding: 16px 40px;
         font-size: 16px;
     }
@@ -817,11 +823,25 @@ td.best, th.best-head, tfoot td.best-foot{
     width: 100%;
     max-height: 100%;;
     height: 100%;
-    border-top-left-radius: 180px;
-    border-top-right-radius: 40px;
-    border-bottom-left-radius: 40px;
-    border-bottom-right-radius: 180px;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 80px;
+    border-bottom-left-radius: 80px;
+    border-bottom-right-radius: 16px;
     object-fit: cover;
+}
+@media screen and (min-width: 768px) {
+    .felia-test-banner-wrapper img {
+        border-top-left-radius: 180px;
+        border-top-right-radius: 40px;
+        border-bottom-left-radius: 40px;
+        border-bottom-right-radius: 180px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .how-example-test-looks-section {
+        padding-top: 0px;
+    }
 }
 
 /* safety-your-child-section */
@@ -841,4 +861,42 @@ td.best, th.best-head, tfoot td.best-foot{
     border-bottom-right-radius: 40px;
     padding: 32px 40px;
     box-shadow: 0px 0px 10px #1245921F;
+}
+
+/* .prenatal-indications-section */
+.prenatal-indications-section  {
+    /* background: 
+         linear-gradient(
+      90deg,          
+      #fafafa 0%,     
+      rgba(239, 167, 247, 0.10) 10%, 
+      rgba(250, 250, 250, 0) 30%     
+    ),  url('./img/prenatal-indications-section-bg.jpg'); */
+    background-repeat: no-repeat;
+    background-size: 1000px;
+}
+
+
+.prenatal-indications-column {
+    padding: 32px;
+    box-shadow: 0px 0px 10px #1245921F;
+    border-radius: 16px;
+}
+
+.prenatal-indications-column h3 {
+    font-size: 24px;
+}
+
+.prenatal-indications-row {
+    gap: 24px;
+}
+
+.prenatal-indications-section-bg {
+    position: absolute;
+    left: 0;
+    width: 1000px;
+}
+
+.prenatal-indications-section-bg img {
+    width: 100%;
 }
