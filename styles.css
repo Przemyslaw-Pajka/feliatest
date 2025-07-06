@@ -31,13 +31,12 @@ body,
     font-weight: 700;
 }
 
-.homepage img {
-    width: auto;
-    height: auto;
-}
-
 .custom-container {
   max-width: 1320px;
+}
+
+.mw-max-content {
+    max-width: max-content;
 }
 
 .btn--primary, 
@@ -899,4 +898,140 @@ td.best, th.best-head, tfoot td.best-foot{
 
 .prenatal-indications-section-bg img {
     width: 100%;
+}
+
+.faq-new-list {
+    list-style-type: none;
+}
+
+.faq-new-list__item {
+    border: 2px solid #1245921F;
+    border-radius: 16px;
+    padding: 24px;
+    display: flex;
+    position: relative;
+    align-items: flex-start;
+    cursor: pointer;
+    margin-bottom: 24px;
+}
+
+.faq-new-list__item .faq-new-list__item-text-block {
+    position: relative;
+    max-width: 520px;
+}
+.faq-new-list__item::after {
+    display: block;
+    position: absolute;
+    content: '';
+    width: 15px;
+    height: 10px;
+    right: 0;
+    background-image: url('./img/icons/arrow-down-icon.png');
+    background-repeat: no-repeat;
+    background-size: 15px 10px;
+    top: 41px;
+    right: 16px;
+    transform: translateY(-50%);
+}
+
+.faq-new-list__item-question {
+    font-weight: 700;
+    margin: 0px;
+    padding-right: 30px;
+}
+
+.faq-new-icon-number {
+    width: 32px;
+    height: 32px;
+}
+
+.faq-new-list__item .faq-new-list__item-answer {
+    display:none;
+    margin: 0px;
+}
+.faq-new-list__item.active .faq-new-list__item-answer {
+    display:block;
+}
+
+.faq-new-list__item p {
+    font-size: 20px;
+}
+
+.contact-us-bottom-text {
+    padding: 32px;
+    background-color: #FDF0F7;
+    border-radius: 24px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    top: -1px;
+    position: relative;
+}
+
+.contact-us-bottom-text a {
+    padding: 17px 67px;
+    background: #fff;
+    color: var(--color-pink);
+    border-radius: 180px;
+    font-size: 20px;
+    font-weight: 700;
+
+}
+
+.faq-second-col {
+    max-width: 536px;
+    box-sizing: content-box;
+}
+
+/* .free-consult-new-section */
+.free-consult-new-form {
+    position: relative;
+    max-width: 100%;
+    background-color: var(--color-blue);
+    color: #fff;
+    padding: 40px;
+    border-radius: 24px;
+}
+
+.free-consult-new-form h2 {
+    font-size: 24px;
+}
+
+.free-consult-new-form input:not([type="checkbox"]) {
+    padding: 16px 55px;
+    margin-bottom: 16px;
+    background-repeat: no-repeat;
+    background-position-y: 50%;
+    background-position-x: 15px;
+}
+.free-consult-new-form input, 
+.free-consult-new-form textarea {
+    display: block;
+    width: 100%;
+    border: 0;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 14px;
+    color: #767676;
+}
+.free-consult-new-form textarea  {
+    padding: 16px;
+    min-height: 160px;
+}
+.free-consult-name-surname-input {
+    background-image: url('./img/icons/small-human-icon.png');
+}
+.free-consult-phone-input {
+    background-image: url('./img/icons/small-blue-phone-icon.png');
+}
+.free-consult-email-input {
+    background-image: url('./img/icons/small-blue-email-icon.png');
+}
+
+.free-consult-new-white-box {
+    box-shadow: 0px 0px 10px #1245921F;
+}
+    
+.free-consult-new-white-box {
+    padding: 32px;
+    border-radius: 16px;
 }
