@@ -985,7 +985,7 @@ td.best, th.best-head, tfoot td.best-foot{
 /* .free-consult-new-section */
 .free-consult-new-form {
     position: relative;
-    max-width: 100%;
+    max-width: 536px;
     background-color: var(--color-blue);
     color: #fff;
     padding: 40px;
@@ -1034,4 +1034,48 @@ td.best, th.best-head, tfoot td.best-foot{
 .free-consult-new-white-box {
     padding: 32px;
     border-radius: 16px;
+}
+
+
+/*  */
+.slide-item-article-guide {
+    padding: 32px 24px;
+    box-shadow: 0px 0px 10px #1245921F;
+    border-radius: 24px;
+    max-width: 388px;
+    background-color: #fff;
+}
+.slide-item-article-guide h3 {
+    font-size: 20px;
+    margin: 18px 0px;
+}
+
+
+
+/* our-partners-new-section */
+.our-partners-new-section h2 {
+    font-size: 24px;
+}
+
+/* footer */
+footer {
+    background: linear-gradient(to left, #fbe5f2, #e7eafc);
+}
+
+.footer-menu-col h3 {
+    font-size: 20px;
+    color: #12459266;
+}
+
+.left-row-footer {
+    max-width: 872px;
+}
+.left-row-footer ul {
+    padding: 0px;
+    list-style-type: none;
+    font-size: 14px;
+    gap: 12px;
+}
+.left-row-footer ul li a {
+    color: #000;
 }
